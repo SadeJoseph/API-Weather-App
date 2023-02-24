@@ -11,11 +11,14 @@ The App would allow users to see he weather forcast for the city of their choice
 - Humidity 
 - Wind speed 
 
+Making API calls using jQuery and using the correct data was necessary for me to complete this task. 
+
 
 
 ## Screenshot 
 ![Screenshot](/screenshot.png)
 
 ## Live Application
+
 
 
