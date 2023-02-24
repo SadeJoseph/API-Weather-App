@@ -73,18 +73,21 @@ function forecast(latitude, longitude) {
         }
     
     }
-    
-
-
-
-
-
-
-
-
 
 
 //local storage- new city searches aand display curernt weatherf
 
+function historyStore(city) {
 
+    var currentSearch = JSON.parse(localStorage.getItem("history"));
+    if (currentSearch !== null) {
+        nextCity = currentSearch;
+    }
+    if (!nextCity.includes(city)) {
+        nextCity.push(city);
+    }
+    localStorage.setItem("history", JSON.stringify(nextCity));
+   
+    
 
+}
