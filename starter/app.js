@@ -6,6 +6,7 @@ var weatherS = $('.weather-search');
 var todayS = $('#today');
 var forecastS = $('#forecast');
 var storedHist= $('#history');
+var nextCity=[];
 
 //display 5 day forecast from city 
 function forecastDis(results) {
