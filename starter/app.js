@@ -49,6 +49,7 @@ function forecast(latitude, longitude) {
         function currentWeatherDis(result, citySearch) {
             todayS.next().html('');
             todayS.html('');
+            forecastS.html('');
             
             if (!result) {
                 todayS.html('<h5>No result found. Please enter a valid city name.</h5>');
