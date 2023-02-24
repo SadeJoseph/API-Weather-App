@@ -16,7 +16,7 @@ Making API calls using jQuery and using the correct data was necessary for me to
 
 
 ## Screenshot 
-![Screenshot](/screenshot.png)
+![Screenshot](/screenshot-1.png)
 
 ## Live Application
 
