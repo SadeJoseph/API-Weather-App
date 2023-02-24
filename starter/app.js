@@ -46,7 +46,7 @@ function forecast(latitude, longitude) {
             forecastDis(data);
 
         });
-
+    }
         function currentWeatherDis(result, citySearch) {
             todayS.next().html('');
             todayS.html('');
