@@ -7,7 +7,7 @@ I had to use the [5 Day Weather Forecast](https://openweathermap.org/forecast5) 
 The App would allow users to see he weather forcast for the city of their choice whilst also displaying:
 - The date
 - Icon representing conditions
-- Temoparature
+- Temparature
 - Humidity 
 - Wind speed 
 
