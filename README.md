@@ -20,5 +20,6 @@ Making API calls using jQuery and using the correct data was necessary for me to
 
 ## Live Application
 
+https://sadejoseph.github.io/API-Weather-App/
 
 
