@@ -50,6 +50,29 @@ function forecast(latitude, longitude) {
             todayS.next().html('');
             todayS.html('');
             
+            if (!result) {
+                todayS.html('<h5>No result found. Please enter a valid city name.</h5>');
+                return;
+            }
+            else {
+                var todaysD = moment.unix(result.dt).format("DD/MM/YYYY");
+                todayS.append(`
+                <div class='border border-dark pl-2'>
+                <p class='font-weight-bold'>
+                <h2>${citySearch} (${todaysD})<img src="https://openweathermap.org/img/w/${result.weather[0].icon}.png" alt="weather icon"></h2>
+                </p>
+                <h6>
+                <p>Temp: ${Math.round(result.main.temp)} C°</p>
+                <p>Wind: ${result.wind.speed} KPH</p>
+                <p>Humidity: ${result.main.humidity} %</p>
+                </h6>
+                </div>
+                `)
+            forecast(result.coord.lat, result.coord.lon);
+        }
+    
+    }
+    
 
 
 
@@ -60,9 +83,7 @@ function forecast(latitude, longitude) {
 
 
 
-
-            
-//local storage- new city searches aand display curernt weather
+//local storage- new city searches aand display curernt weatherf
 
 
 
