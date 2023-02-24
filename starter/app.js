@@ -38,8 +38,30 @@ var currentHour= moment.unix(day.dt).format("hh:mm:ss a");
 }
 
 //display weather and display new search . make alert for invalid city 
+function forecast(latitude, longitude) {
+   
+    $.get(`https://api.openweathermap.org/data/2.5/forecast?appid=${apiKey}&lat=${latitude}&lon=${longitude}&units=metric`)
+        .then(function (data) {
+            forecastDis(data);
+
+        });
+
+        function currentWeatherDis(result, citySearch) {
+            todayS.next().html('');
+            todayS.html('');
+            
 
 
+
+
+
+
+
+
+
+
+
+            
 //local storage- new city searches aand display curernt weather
 
 
