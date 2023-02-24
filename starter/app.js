@@ -92,3 +92,38 @@ function historyStore(city) {
     
 
 }
+function currentWeather(event) {
+    
+    event.preventDefault();
+//Gets id of button to know if is first time 
+var button = $(this).attr("id");
+if (button !== 'search-button') { 
+    var buttonId = $(this).attr("id");
+    citySearch = buttonId;
+    
+}
+
+else {
+    var citySearch = weatherS.val().trim();
+    weatherS.val('');    
+};
+//display the current weather
+if ((citySearch) && (citySearch !== '')) {
+    $.get(`https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&appid=${apiKey}&units=metric`)
+        .then(function (data) {
+            
+            historyStore(citySearch);
+            renderHistory();
+            currentWeatherDis(data, citySearch);  
+
+         }
+        )
+        .fail(function (){
+          currentWeatherDis(false, citySearch);      
+        }
+        )
+
+}
+
+
+}
