@@ -31,12 +31,7 @@ var currentHour= moment.unix(day.dt).format("hh:mm:ss a");
         </h6>
         </div>
         `)
-}
-
-}
-
-
-}
+}}}
 
 //display weather and display new search . make alert for invalid city 
 function forecast(latitude, longitude) {
@@ -74,10 +69,7 @@ function forecast(latitude, longitude) {
         }
     
     }
-
-
 //local storage- new city searches aand display curernt weatherf
-
 function historyStore(city) {
 
     var currentSearch = JSON.parse(localStorage.getItem("history"));
@@ -124,10 +116,7 @@ if ((citySearch) && (citySearch !== '')) {
         )
 
 }
-
-
 }
-
 function renderHistory() {
 
     //Get stored search from localStorage
