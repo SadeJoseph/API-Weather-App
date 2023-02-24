@@ -3,3 +3,8 @@
         background: linear-gradient(90deg, rgb(50, 157, 187) 0%, rgb(40, 116, 120), rgb(43, 132, 148)100%);
     }
     
+
+    .forecast-card {
+        background-color: rgb(45, 194, 194);
+        color: white;
+    }
